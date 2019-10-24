@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="01f0b568-7287-4f0a-8d9b-f7cf9ce6c1f7" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/project/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/quiz/resources/js/components/App.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+              <folding>
+                <element signature="e#857#863#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/quiz/resources/js/components/Auth/Logout.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/quiz/routes/api.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="72" selection-start-line="25" selection-start-column="72" selection-end-line="25" selection-end-column="72" />
+              <folding>
+                <element signature="e#7#20#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/quiz/app/Http/Controllers/Auth/AuthController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="770">
+              <caret line="62" column="35" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
+              <folding>
+                <element signature="e#45#81#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/quiz/resources/js/components/quiz/NewQuiz.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/quiz/resources/js/components/quiz/QuizView.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+              <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/quiz/resources/js/components/quiz/QuizPlay.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="643">
+              <caret line="98" column="61" selection-start-line="98" selection-start-column="61" selection-end-line="98" selection-end-column="61" />
+              <caret line="105" column="61" selection-start-line="105" selection-start-column="61" selection-end-line="105" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/quiz/resources/js/components/question/NewQuestion.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="48" column="32" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/quiz/resources/js/components/Auth/Login.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/quiz/resources/js/components/Answer/AnswerForm.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>show1</find>
+      <find>register</find>
+      <find>validQuestion</find>
+      <find>valid</find>
+      <find>Auth</find>
+      <find>auth</find>
+      <find>loading</find>
+      <find>components:</find>
+      <find>login</find>
+      <find>watch</find>
+      <find>map</find>
+      <find>snackbar</find>
+      <find>question.id</find>
+      <find>questionId</find>
+      <find>points</find>
+      <find>results</find>
+      <find>checkResults</find>
+      <find>to=</find>
+      <find>pointSum</find>
+      <find>justify</find>
+      <find>console.log</find>
+      <find>showQuiz</find>
+      <find>font-weight-medium</find>
+      <find>2019</find>
+      <find>slot</find>
+      <find>creat</find>
+      <find>progress</find>
+      <find>validAnswers</find>
+      <find>color</find>
+      <find>logout</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>showPassword</replace>
+      <replace>font-weight-bold</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/quiz/resources/js/components/quiz</dir>
+      <dir>$PROJECT_DIR$/quiz</dir>
+      <dir>$PROJECT_DIR$/quiz/app</dir>
+      <dir>$PROJECT_DIR$/quiz/resources/js/components</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/laradock" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/quiz/vendor/composer/autoload_classmap.php" />
+        <option value="$PROJECT_DIR$/quiz/resources/views/welcome.blade.php" />
+        <option value="$PROJECT_DIR$/quiz/resources/js/components/Page.vue" />
+        <option value="$PROJECT_DIR$/quiz/resources/js/components/Welcome.vue" />
+        <option value="$PROJECT_DIR$/quiz/resources/sass/app.scss" />
+        <option value="$PROJECT_DIR$/quiz/webpack.mix.js" />
+        <option value="$PROJECT_DIR$/quiz/resources/js/repositories/QuizRepository.js" />
+        <option value="$PROJECT_DIR$/quiz/resources/js/repositories/RepositoryFactory.js" />
+        <option value="$PROJECT_DIR$/quiz/composer.json" />
+        <option value="$PROJECT_DIR$/quiz/public/index.html" />
+        <option value="$PROJECT_DIR$/quiz/resources/views/vueapp.blade.php" />
+        <option value="$PROJECT_DIR$/quiz/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php" />
+        <option value="$PROJECT_DIR$/quiz/routes/web.php" />
+        <option value="$PROJECT_DIR$/quiz/config/auth.php" />
+        <option value="$PROJECT_DIR$/quiz/config/app.php" />
+        <option value="$PROJECT_DIR$/quiz/app/Http/Controllers/AuthAuthController.php" />
+        <option value="$PROJECT_DIR$/quiz/app/Http/Controllers/Auth/RegisterController.php" />
+        <option value="$PROJECT_DIR$/quiz/app/Http/Kernel.php" />
+        <option value="$PROJECT_DIR$/quiz/app/User.php" />
+        <option value="$PROJECT_DIR$/quiz/database/migrations/2019_09_02_195700_initial_migration.php" />
+        <option value="$PROJECT_DIR$/quiz/resources/js/repositories/Repository.js" />
+        <option value="$PROJECT_DIR$/quiz/app/Quiz.php" />
+        <option value="$PROJECT_DIR$/quiz/app/Policies/QuestionPolicy.php" />
+        <option value="$PROJECT_DIR$/quiz/app/Policies/AnswerPolicy.php" />
+        <option value="$PROJECT_DIR$/quiz/app/Providers/AuthServiceProvider.php" />
+        <option value="$PROJECT_DIR$/quiz/resources/js/repositories/QuestionRepository.js" />
+        <option value="$PROJECT_DIR$/quiz/app/Http/Controllers/QuestionController.php" />
+        <option value="$PROJECT_DIR$/quiz/app/Http/Controllers/AnswerController.php" />
+        <option value="$PROJECT_DIR$/quiz/app/Answer.php" />
+        <option value="$PROJECT_DIR$/quiz/app/Question.php" />
+        <option value="$PROJECT_DIR$/quiz/resources/js/repositories/AnswerRepository.js" />
+        <option value="$PROJECT_DIR$/quiz/app/Http/Controllers/QuizController.php" />
+        <option value="$PROJECT_DIR$/quiz/resources/js/components/navigation/NavigationDrawer.vue" />
+        <option value="$PROJECT_DIR$/quiz/resources/js/components/Auth/SignUp.vue" />
+        <option value="$PROJECT_DIR$/quiz/app/Policies/QuizPolicy.php" />
+        <option value="$PROJECT_DIR$/quiz/resources/js/components/question/QuestionList.vue" />
+        <option value="$PROJECT_DIR$/quiz/resources/js/vueapp.js" />
+        <option value="$PROJECT_DIR$/quiz/resources/js/components/quiz/QuizList.vue" />
+        <option value="$PROJECT_DIR$/quiz/resources/js/components/quiz/QuizView.vue" />
+        <option value="$PROJECT_DIR$/quiz/resources/js/components/quiz/QuizPlay.vue" />
+        <option value="$PROJECT_DIR$/quiz/resources/js/components/quiz/QuizForm.vue" />
+        <option value="$PROJECT_DIR$/quiz/resources/js/components/quiz/NewQuiz.vue" />
+        <option value="$PROJECT_DIR$/quiz/resources/js/components/question/QuestionForm.vue" />
+        <option value="$PROJECT_DIR$/quiz/resources/js/components/Answer/AnswerForm.vue" />
+        <option value="$PROJECT_DIR$/quiz/resources/js/components/question/NewQuestion.vue" />
+        <option value="$PROJECT_DIR$/quiz/resources/js/components/Auth/Login.vue" />
+        <option value="$PROJECT_DIR$/quiz/resources/js/routes.js" />
+        <option value="$PROJECT_DIR$/quiz/resources/js/components/App.vue" />
+        <option value="$PROJECT_DIR$/quiz/routes/api.php" />
+        <option value="$PROJECT_DIR$/quiz/app/Http/Controllers/Auth/AuthController.php" />
+        <option value="$PROJECT_DIR$/quiz/resources/js/components/Auth/Logout.vue" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/project/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/project/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/project/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/project/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/project/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/project/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/project/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/project/vendor/composer" />
+      <path value="$PROJECT_DIR$/project/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/project/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/project/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/project/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/project/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/project/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/project/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/project/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/project/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/project/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/project/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/project/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/project/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/project/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/project/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/project/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/project/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/project/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/project/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/project/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/project/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/project/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/project/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/project/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/project/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/project/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/project/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/project/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/project/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/project/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/project/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/project/vendor/beyondcode/laravel-dump-server" />
+      <path value="$PROJECT_DIR$/project/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/project/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/project/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/project/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/project/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/project/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/project/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/project/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/project/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/project/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/project/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/project/vendor/erusev/parsedown" />
+      <path value="$PROJECT_DIR$/project/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/project/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/project/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/project/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/project/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/project/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/project/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/project/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/project/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/project/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/project/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/project/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/project/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/project/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/project/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/project/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/project/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/project/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/project/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/project/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/project/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/project/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/project/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/project/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/project/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/project/vendor/jakub-onderka/php-console-highlighter" />
+      <path value="$PROJECT_DIR$/project/vendor/jakub-onderka/php-console-color" />
+      <path value="$PROJECT_DIR$/project/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/project/vendor/filp/whoops" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="M150" type="b2602c69:ProjectViewProjectNode" />
+              <item name="M150" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="M150" type="b2602c69:ProjectViewProjectNode" />
+              <item name="M150" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="M150" type="b2602c69:ProjectViewProjectNode" />
+              <item name="M150" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="M150" type="b2602c69:ProjectViewProjectNode" />
+              <item name="M150" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="M150" type="b2602c69:ProjectViewProjectNode" />
+              <item name="M150" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="M150" type="b2602c69:ProjectViewProjectNode" />
+              <item name="M150" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="M150" type="b2602c69:ProjectViewProjectNode" />
+              <item name="M150" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Policies" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="M150" type="b2602c69:ProjectViewProjectNode" />
+              <item name="M150" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="M150" type="b2602c69:ProjectViewProjectNode" />
+              <item name="M150" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="M150" type="b2602c69:ProjectViewProjectNode" />
+              <item name="M150" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="M150" type="b2602c69:ProjectViewProjectNode" />
+              <item name="M150" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="M150" type="b2602c69:ProjectViewProjectNode" />
+              <item name="M150" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Answer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="M150" type="b2602c69:ProjectViewProjectNode" />
+              <item name="M150" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="M150" type="b2602c69:ProjectViewProjectNode" />
+              <item name="M150" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="navigation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="M150" type="b2602c69:ProjectViewProjectNode" />
+              <item name="M150" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="question" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="M150" type="b2602c69:ProjectViewProjectNode" />
+              <item name="M150" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="M150" type="b2602c69:ProjectViewProjectNode" />
+              <item name="M150" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="repositories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="M150" type="b2602c69:ProjectViewProjectNode" />
+              <item name="M150" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/quiz/resources/js/repositories" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/quiz/app/Http/Controllers/Auth" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/quiz/resources/js/repositories" />
+      <recent name="$PROJECT_DIR$/laradock" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="01f0b568-7287-4f0a-8d9b-f7cf9ce6c1f7" name="Default Changelist" comment="" />
+      <created>1566843325535</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1566843325535</updated>
+      <workItem from="1566843327641" duration="3281000" />
+      <workItem from="1567449384697" duration="397000" />
+      <workItem from="1567449986525" duration="15800000" />
+      <workItem from="1571049206341" duration="8975000" />
+      <workItem from="1571295889570" duration="12241000" />
+      <workItem from="1571374503132" duration="44047000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="84741000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26495728" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="TypeScript" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32959184" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.24081632" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/quiz/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/vendor/laravel/passport/src/Http/Middleware/CreateFreshApiToken.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="39" column="6" lean-forward="true" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="66" column="42" lean-forward="true" selection-start-line="66" selection-start-column="42" selection-end-line="66" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/app/Http/Middleware/Authenticate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/config/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="45" column="34" lean-forward="true" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/vendor/laravel/framework/src/Illuminate/Foundation/Auth/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="42" column="43" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
+          <folding>
+            <element signature="e#23#63#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="40" lean-forward="true" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/database/migrations/2019_09_02_195700_initial_migration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" column="63" lean-forward="true" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/vendor/laravel/framework/src/Illuminate/Support/Facades/Auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/resources/js/repositories/RepositoryFactory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/resources/js/repositories/QuizRepository.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/resources/js/repositories/Repository.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/app/Policies/AnswerPolicy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/app/Providers/AppServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/app/Quiz.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+          <folding>
+            <element signature="e#23#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/app/Policies/QuestionPolicy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="91" column="56" selection-start-line="91" selection-start-column="56" selection-end-line="91" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/app/Providers/AuthServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+          <folding>
+            <element signature="e#33#48#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/resources/js/components/ExampleComponent.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/resources/js/components/Welcome.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/resources/js/components/Page.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/app/Http/Controllers/QuestionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="33" selection-end-column="36" />
+          <folding>
+            <element signature="e#40#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/app/Question.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="58" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
+          <folding>
+            <element signature="e#23#64#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/app/Http/Controllers/AnswerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/resources/js/repositories/AnswerRepository.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/app/Answer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="66" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="66" />
+          <folding>
+            <element signature="e#23#64#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/resources/js/repositories/QuestionRepository.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/resources/js/components/navigation/NavigationDrawer.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/resources/js/components/Auth/SignUp.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="79" column="60" selection-start-line="79" selection-start-column="60" selection-end-line="79" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/public/js/vueapp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="2834" column="4" selection-start-line="2834" selection-start-column="4" selection-end-line="2834" selection-end-column="4" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/app/Policies/QuizPolicy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+          <folding>
+            <element signature="e#32#45#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/app/Http/Controllers/QuizController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/resources/js/components/question/QuestionList.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/resources/js/app.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/node_modules/vuetify/lib/util/colors.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="297" column="29" lean-forward="true" selection-start-line="297" selection-start-column="29" selection-end-line="297" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/resources/js/vueapp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="708">
+          <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/resources/js/components/quiz/QuizList.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/resources/js/components/quiz/QuizView.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+          <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/resources/js/components/quiz/QuizPlay.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="643">
+          <caret line="98" column="61" selection-start-line="98" selection-start-column="61" selection-end-line="98" selection-end-column="61" />
+          <caret line="105" column="61" selection-start-line="105" selection-start-column="61" selection-end-line="105" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/resources/js/components/question/QuestionForm.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/resources/js/components/quiz/QuizForm.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/resources/js/components/quiz/NewQuiz.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/resources/js/components/Answer/AnswerForm.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/resources/js/components/question/NewQuestion.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="48" column="32" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/resources/js/components/Auth/Login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/resources/js/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/resources/js/components/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding>
+            <element signature="e#857#863#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="72" selection-start-line="25" selection-start-column="72" selection-end-line="25" selection-end-column="72" />
+          <folding>
+            <element signature="e#7#20#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/app/Http/Controllers/Auth/AuthController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="770">
+          <caret line="62" column="35" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
+          <folding>
+            <element signature="e#45#81#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/resources/js/components/Auth/Logout.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('{anything}', function () {
+
+
+Route::get('{anything?}', function () {
     return view('vueapp');
 })->where('anything', '^.*');

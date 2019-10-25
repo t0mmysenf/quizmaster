@@ -6,8 +6,14 @@ import NewQuestion from "./components/question/NewQuestion";
 import SignUp from "./components/Auth/SignUp";
 import QuizPlay from "./components/quiz/QuizPlay";
 import Logout from "./components/Auth/Logout";
+import Home from "./components/Home";
 
 const routes = [
+    {
+        path: '/',
+        name: 'default',
+        component: Home,
+    },
     {
         path: '/signup',
         name: 'sign up',

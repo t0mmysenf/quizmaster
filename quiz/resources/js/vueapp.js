@@ -33,7 +33,7 @@ const router = new VueRouter({
 Axios.defaults.headers.common['Content-Type'] = 'application/json';
 
 router.beforeEach((to, from, next) => {
-    if (to.fullPath !== '/login' && to.fullPath !== '/signup') {
+    if (to.fullPath !== '/' && to.fullPath !== '/login' && to.fullPath.toLowerCase() !== '/signup') {
         let token = window.localStorage.getItem('token');
         Axios.get('/api/profile', {
             headers: {'Authorization': `Bearer ${token}`}

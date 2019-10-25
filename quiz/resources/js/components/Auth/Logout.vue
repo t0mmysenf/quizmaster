@@ -24,11 +24,14 @@
                 const token = this.$root.$data.user.token;
                 if (token !== undefined) {
                     Axios.get('api/logout', {
-                        'Authorization': `Bearer ${token}`,
-                        'Accept': 'application/json',
+                        headers: {
+                            'Authorization': `Bearer ${token}`,
+                            'Accept': 'application/json',
+                        }
                     })
-                        .then(response => {
-                            console.log(response);
+                        .then(() => {
+                            window.localStorage.removeItem('token');
+                            this.$root.$data.user = {};
                         });
                 }
             }

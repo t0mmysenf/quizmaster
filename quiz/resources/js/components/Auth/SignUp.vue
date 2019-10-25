@@ -76,11 +76,29 @@
                     email: this.email,
                     password: this.password,
                     password_confirmation: this.password_confirmation,
-                }).then(response => {
-                    // TODO: Handle result of signup request
-                    console.log('response');
                 })
-
+                    .then(response => {
+                        if (response.status === 200) {
+                            const userData = response.data.success;
+                            window.localStorage.setItem('token', userData.token);
+                            this.$root.$data.user.token = userData.token;
+                            return Axios.get('/api/profile', {
+                                headers: {
+                                    'Authorization': `Bearer ${userData.token}`,
+                                    'Accept': 'application/json',
+                                },
+                            })
+                        }
+                    })
+                    .then(response => {
+                        if (response.status === 200) {
+                            const userData = response.data.success;
+                            this.$root.$data.user.id = userData.id;
+                            this.$root.$data.user.name = userData.name;
+                            this.$root.$data.user.email = userData.email;
+                            this.$router.push('/quizzes');
+                        }
+                    });
             }
         }
     }

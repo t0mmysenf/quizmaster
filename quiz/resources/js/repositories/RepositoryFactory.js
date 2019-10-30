@@ -10,5 +10,8 @@ const repositories = {
 };
 
 export const RepositoryFactory = {
-    get: name => repositories[name]
+    get: name => {
+        const repository = repositories[name];
+        return repository;
+    }
 };

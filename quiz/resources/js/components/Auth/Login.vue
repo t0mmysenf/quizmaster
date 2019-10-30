@@ -35,7 +35,7 @@
             <v-col>
                 <p class="text-center">
                     No account yet?
-                    <br />
+                    <br/>
                     <a href="/signUp">Go create one!</a>
                 </p>
             </v-col>
@@ -44,6 +44,7 @@
 </template>
 
 <script>
+    import Vue from 'vue';
     import Axios from 'axios';
 
     export default {
@@ -55,20 +56,23 @@
         }),
         methods: {
             login() {
-                Axios.post('/api/login', {
+                Axios.post('/login', {
                     email: this.email,
                     password: this.password
                 })
                     .then((response) => {
                         if (response.status === 200) {
-                            Axios.defaults.headers.common['Authorization'] = `Bearer ${response.data.success.token}`;
+                            const token = response.data.success.token;
+                            Axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
                             window.localStorage.setItem('token', response.data.success.token);
-                            this.$root.$data.user.token = response.data.success.token;
-                            this.loadUserProfile();
-                            this.$router.push('/quizzes');
+                            Vue.set(this.$root.$data.user, 'token', response.data.success.token);
+                            return this.loadUserProfile();
                         } else {
                             throw Error('Login failed');
                         }
+                    })
+                    .then(() => {
+                        this.$router.push('/quizzes');
                     })
                     .catch(error => {
                         // TODO: notify user about failed login
@@ -79,12 +83,12 @@
             },
 
             loadUserProfile() {
-                Axios.get('/api/profile')
+                Axios.get('/profile')
                     .then(response => {
                         const userData = response.data.success;
-                        this.$root.$data.user.id = userData.id;
-                        this.$root.$data.user.name = userData.name;
-                        this.$root.$data.user.email = userData.email;
+                        Vue.set(this.$root.$data.user, 'id', userData.id);
+                        Vue.set(this.$root.$data.user, 'name', userData.name);
+                        Vue.set(this.$root.$data.user, 'email', userData.email);
                     })
             }
         }

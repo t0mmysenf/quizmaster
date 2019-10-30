@@ -1,4 +1,4 @@
-import Repository from './Repository';
+import Repository from 'axios';
 
 const resource = '/answers';
 
@@ -17,5 +17,5 @@ export default {
 
     createAnswer(payload) {
         return Repository.post(`${resource}`, payload);
-    }
+    },
 }

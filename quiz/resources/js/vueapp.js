@@ -31,11 +31,16 @@ const router = new VueRouter({
 });
 
 Axios.defaults.headers.common['Content-Type'] = 'application/json';
+Axios.defaults.baseURL = '/api';
 
 router.beforeEach((to, from, next) => {
-    if (to.fullPath !== '/' && to.fullPath !== '/login' && to.fullPath.toLowerCase() !== '/signup') {
+    if (to.fullPath === '/'
+        || to.fullPath === '/login'
+        || to.fullPath.toLowerCase() === '/signup') {
+        next();
+    } else {
         let token = window.localStorage.getItem('token');
-        Axios.get('/api/profile', {
+        Axios.get('/profile', {
             headers: {'Authorization': `Bearer ${token}`}
         })
             .then(() => {
@@ -44,8 +49,6 @@ router.beforeEach((to, from, next) => {
             .catch(() => {
                 router.push('/login');
             });
-    } else {
-        next();
     }
 });
 

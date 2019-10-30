@@ -68,20 +68,27 @@
             snackbarText: '',
             snackbar: false,
         }),
-        mounted() {
-            QuizRepository.get()
-                .then(response => {
-                    if (response.status === 200) {
-                        this.quizzes = response.data;
-                    } else {
-                        throw Error("Failed loading quizzes.");
-                    }
-                })
-                .catch(() => {
-                    this.showSnackbar("Failed loading quizzes.");
-                });
+
+        created() {
+            this.fetchData();
         },
+
         methods: {
+            fetchData() {
+                QuizRepository.get()
+                    .then(response => {
+                        if (response.status === 200) {
+                            this.quizzes = response.data;
+                        } else {
+                            throw Error("Failed loading quizzes.");
+                        }
+                    })
+                    .catch(() => {
+                        this.showSnackbar("Failed loading quizzes.");
+                    });
+
+            },
+
             showSnackbar(text) {
                 this.snackbarText = text;
                 this.snackbar = true;

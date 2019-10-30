@@ -48,7 +48,7 @@ In your just cloned repository you should see two directories named `laradock` a
 
 Now let's have a look in the `quiz` directory:
 
-```
+```shell
 cd quiz/
 ```
 
@@ -57,7 +57,7 @@ cd quiz/
 
 Since all dependencies are already described in the `composer.json` file, let's now install them:
 
-```
+```shell
 # Again: Use sudo if you're not the owner of /var/www/html/quiz/
 sudo composer install
 ```
@@ -69,7 +69,7 @@ The frontend was build using [Vue.js](https://vuejs.org), a relatively lightweig
 
 To install all those frameworks and libraries along with their dependency, you'll use the _node package management_:
 
-```
+```shell
 # Still: npm creates some directories and quite some files.
 #        Use sudo in case you're not the owner of /var/www/html/quiz/
 sudo npm install
@@ -81,7 +81,7 @@ The database server is already set up in the virtual CentOS machine. If you're u
 #### Database and User
 There's a sql script prepared at root level of this project named `initDb.sql`. Use the `mysql` command line tool to execute this script on the database server:
 
-```
+```shell
 # The root password is: Gibz1234
 mysql -u root -p < /var/www/html/initDb.sql
 ```
@@ -91,7 +91,7 @@ The above mentioned script created a new database named `quiz` along with a user
 #### Data
 Since you've now created a new database (with a dedicated user), let's import some existing data into this database. Again, this can be achieved with the `mysql` command line tool:
 
-```
+```shell
 # Use the passwort of the just created user: qu!z_m150
 mysql -u quizmaster -p quiz < /var/www/html/seedDb.sql
 ``` 
@@ -106,7 +106,7 @@ Laravel expects some configuration to sit in a file named `.env` at the root of 
 
 Let's copy this template and edit the copy afterwards:
 
-```
+```shell
 # Copy the template (.env.example) to a file named .env
 sudo cp .env.example .env
 
@@ -136,7 +136,7 @@ Save and close the file.If you're using _nano_ do this as stated at the bottom o
 #### Generate Application Keys
 The application uses several keys for securely storing user credentials. These keys of course are _not_ stored in the git repository. So let's generate them now using the `artisan` command line tool which comes with the Laravel framework:
 
-```
+```shell
 sudo php artisan key:generate
 sudo php artisan passport:keys
 ```
@@ -148,7 +148,7 @@ Since the Laravel framework, running as `apache` user on the server (in the virt
 
 These commands ensure, the framework will run smoothly and you won't run into permission issues:
 
-```
+```shell
 # Assign 'apache' as user and user group recursively to the web root directory
 sudo chown -R apache:apache /var/www/html
 
@@ -158,7 +158,7 @@ sudo chmod -R 0775 /var/www/html/quiz/storage/ /var/www/html/quiz/bootstrap/cach
 
 To take effect, it's recommended to restart the Apache HTTP server. Use this command:
 
-```
+```shell
 sudo systemctl restart httpd
 ```
 

@@ -39,10 +39,12 @@ cd /var/www/html/
 
 # Clone git repository (use sudo in case you're not the owner of document root directory)
 # Don't omit the dot at the end of the statement to indicate the clone command shoud not create a new directory. 
-sudo git clone [url-of-your-repository.git) .
+sudo git clone [url-of-your-repository.git] .
 ``` 
 
-In your just cloned repository you should see two directories named `laradock` and `quiz`. The first one is just use for running the application in Docker containers. This approach won't be discussed here - it's up to you to further explore this way. The latter one contains the source code the QU!Z application is made of - our primary interest at the moment.
+If your fork is not public, you'll have to authenticate in one way or another. Whether you clone with SSH or HTTPS depends on your mode of authentication. Usually it's easier to use the HTTPS method. In this case you'll have to enter your personal credentials to clone the repository. When using the SSH method, you'll have to generate SSH keys on your server (virtual machine), post the public key to your remote git repository provider (e.g. GitLab, GitHub, Bitbucket, ...) and clone the repository afterwards using the SSH url.
+
+In your just cloned repository you should see two directories named `laradock` and `quiz`. The first one is just used for running the application in Docker containers. This approach won't be discussed here - it's up to you to further explore this approach. The latter one contains the source code the QU!Z application is made of - our primary interest at the moment.
 
 Now let's have a look in the `quiz` directory:
 
@@ -80,6 +82,7 @@ The database server is already set up in the virtual CentOS machine. If you're u
 There's a sql script prepared at root level of this project named `initDb.sql`. Use the `mysql` command line tool to execute this script on the database server:
 
 ```
+# The root password is: Gibz1234
 mysql -u root -p < /var/www/html/initDb.sql
 ```
 
@@ -89,7 +92,8 @@ The above mentioned script created a new database named `quiz` along with a user
 Since you've now created a new database (with a dedicated user), let's import some existing data into this database. Again, this can be achieved with the `mysql` command line tool:
 
 ```
-mysql -u root -p quiz < /var/www/html/seedDb.sql
+# Use the passwort of the just created user: qu!z_m150
+mysql -u quizmaster -p quiz < /var/www/html/seedDb.sql
 ``` 
 
 You might want to check a this stage whether the data could be imported successfully: Establish a connection on port `3306` with the already mentioned credentials for the newly created user.
@@ -136,3 +140,49 @@ The application uses several keys for securely storing user credentials. These k
 sudo php artisan key:generate
 sudo php artisan passport:keys
 ```
+
+### File Permissions
+Finally, let's fix the file permissions. The Apache HTTP server runs locally a user `apache` which belongs to its own user group named `apache` as well.
+
+Since the Laravel framework, running as `apache` user on the server (in the virtual machine respectively), will write some files while the application is running, we need to give this user the correct permissions on files and directories.
+
+These commands ensure, the framework will run smoothly and you won't run into permission issues:
+
+```
+# Assign 'apache' as user and user group recursively to the web root directory
+sudo chown -R apache:apache /var/www/html
+
+# Adjust permissions for some directories (recursively)
+sudo chmod -R 0775 /var/www/html/quiz/storage/ /var/www/html/quiz/bootstrap/cache/
+```
+
+To take effect, it's recommended to restart the Apache HTTP server. Use this command:
+
+```
+sudo systemctl restart httpd
+```
+
+### Use the Application
+At this point you might be wondering how to access the application?
+
+Easy - just fire up your browser and browse to your servers ip address.
+- In case you're using a "real" server, it might have assigned a domain name.
+- In case you're using the provided CentOS virtual machine, you've to look up its public ip address:
+`ip addr show | grep "inet.*global"`
+
+Once the QU!Z application appears in the browser, you might want to create your own account. Since it's the copy of a running application, there are of course a few user already signed up. To edit an existing quiz, maybe you'll want to use one of those:
+- Trudi Gerster
+    - username: `rotkaeppchen@dunkler-wald.ch`
+    - password: `password`
+- Donald Duck
+    - username: `donald@entenhausen.de`
+    - password: `password`
+- Popeye
+    - username: `fucking-iron@spinach.io`
+    - password: `password`
+    
+    
+**Enjoy and have fun...!**
+
+## Feedback
+Feedback on the application is very welcome! Just reach out to your teacher and/or the maintainer of this repository!

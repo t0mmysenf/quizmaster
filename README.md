@@ -9,13 +9,16 @@ The application is composed out of various components and frameworks:
 ## Requirements
 You're advised to check the requirements before installing/running the application on a server or in a virtual machine.
 - PHP >= 7.2.x
-- Webserver (Apache recommended)
-- Database (MariaDB recommended, MySQL alternatively)
+- Webserver (recommended/tested: Apache)
+- Database (MariaDB (recommended/tested), MySQL alternatively)
 - Node Package Manager (npm) >= 12.x
 - Composer >= 1.9.x
 - Git
 
-As a student you'll be given a virtual machine running CentOS with all dependencies pre-installed. The complete list of (relevant) components is:
+## Virtual machine
+As a student you'll be given a virtual machine running CentOS 7 with all dependencies pre-installed. This virtual machine meets the above mentioned dependencies.
+
+Here's a list of relevant components:
 - CentOS 7 (Kernel: Linux 3.10.0-1062.4.1.el7.x86_64)
 - Apache 2.4.6
 - MariaDB 10.4.8
@@ -26,10 +29,12 @@ As a student you'll be given a virtual machine running CentOS with all dependenc
 
 The virtual machine is provisioned with a default user:
 - username: `webadmin`
-- password: `Gibz1234` 
+- password: `Gibz1234`
+
+Consider this virtual machine as your local development environment. Later, you might be given _another_ virtual machine which simulates a (public) testing environment. 
 
 ## Installation
-This installation guide assumes a fully working LAMP stack (Linux, Apache, MySQL, PHP) which meets the above requirements. You might want to use the given virtual machine or ask the system technician you trust.
+This installation guide assumes a fully working LAMP stack (Linux, Apache, MySQL, PHP) which meets the above mentioned requirements. You might want to use the given virtual machine or ask the system technician you trust.
 
 ### Clone Git Repository
 You'll be given the source code of the QU!Z application as git repository. You should _fork_ this repository. Now clone your own repository on the CentOS server. Do this at the document root of the Apache HTTP server. Usually, the document root is located at `/var/www/html/` of your server.
@@ -53,9 +58,9 @@ cd quiz/
 ```
 
 ### Install PHP Packages using _Composer_
-[Composer](https://getcomposer.com) is a dependency management system for php application. It's comparable to the node package management _npm_ and others.
+[Composer](https://getcomposer.com) is a dependency management system for php applications. It's comparable to the node package management _npm_, package managers like _yum_, _apt_ or _apt-get_ on Linux and others.
 
-Since all dependencies are already described in the `composer.json` file, let's now install them:
+Since all dependencies are already described in the `composer.json` file (and locked in the `composer.lock` file), let's now install them. Make sure you're in the directory which actually contains the `composer.json` file.
 
 ```shell
 # Again: Use sudo if you're not the owner of /var/www/html/quiz/
@@ -67,7 +72,7 @@ After you've successfully installed all packages required for the backend, you'l
 
 The frontend was build using [Vue.js](https://vuejs.org), a relatively lightweight and modern javascript framework. On top of Vue.js, [Vuetify](https://vuetifyjs.com) was used as a UI library. It brings us dozens of carefully crafted building blocks according to the Material Design guidelines.
 
-To install all those frameworks and libraries along with their dependency, you'll use the _node package management_:
+To install all those frameworks and libraries along with their dependencies, you'll use the _node package manager_:
 
 ```shell
 # Still: npm creates some directories and quite some files.
@@ -76,10 +81,10 @@ sudo npm install
 ```
 
 ### Initialize the Database
-The database server is already set up in the virtual CentOS machine. If you're using another server, you should confirm you've a running database instance before you proceed with the following steps.
+The database server (MariaDB) is already set up in the virtual CentOS machine. If you're using another server, you should confirm you've a running database instance before you proceed with the following steps.
 
 #### Database and User
-There's a sql script prepared at root level of this project named `initDb.sql`. Use the `mysql` command line tool to execute this script on the database server:
+There's a sql script prepared at root level of this project named `initDb.sql`. Use the `mysql` command line tool to execute this script on the database server. You'll be prompted to enter the database password for the `root` user - which is actually the same password as for the `webadmin` system user on the virtual machine (`Gibz1234`).
 
 ```shell
 # The root password is: Gibz1234
@@ -117,7 +122,7 @@ sudo nano .env
 
 At this point you should be able to edit the main configuration for the Laravel framework. There's not much to do. For now you'll just configure the database connection. Find the lines prepended with `DB_` and adjust the settings according to your database setup.
 
-The configuration values shown below meet the setup in the virtual CentOS machine:
+The configuration values shown below meet the setup in the virtual CentOS machine or the created database and user respectively:
 
 <pre>
 DB_CONNECTION=mysql

@@ -6,13 +6,15 @@ The application is composed out of various components and frameworks:
 - **Frontend**: JavaScript framework _Vue.js_ along with _Vuetify_
 - **Environment**: The application might run on a classic LAMP stack or containerized using Docker.
 
+You'll find links and references to framework documentations at the end of this file in the section _Further Information_.
+
 ## Requirements
 You're advised to check the requirements before installing/running the application on a server or in a virtual machine.
-- PHP >= 7.2.x
 - Webserver (recommended/tested: Apache)
 - Database (MariaDB (recommended/tested), MySQL alternatively)
-- Node Package Manager (npm) >= 12.x
+- PHP >= 7.2.x
 - Composer >= 1.9.x
+- Node Package Manager (npm) >= 12.x
 - Git
 
 ## Virtual machine
@@ -26,6 +28,7 @@ Here's a list of relevant components:
 - composer 1.9.0
 - node 12.13.0
 - npm 6.12.0
+- git 1.8.3.1
 
 The virtual machine is provisioned with a default user:
 - username: `webadmin`
@@ -188,6 +191,18 @@ Once the QU!Z application appears in the browser, you might want to create your 
     
     
 **Enjoy and have fun...!**
+
+## Further Information
+In this section some links and references are listed. The listing is not considered complete or ordered in any way.
+
+- Official documentation of PHP framework _Laravel_ (version 6): https://laravel.com/docs/6.x
+- Laradock (in case you intend to run the application in Docker containers): https://laradock.io/
+- Vue.js frontend framework documentation (guide): https://vuejs.org/v2/guide/
+- Vuetify UI library documentation: https://vuetifyjs.com/en/getting-started/quick-start
+- Guide to deploy a Laravel application over ftp: https://laraveldaily.com/laravel-and-shared-hosting-working-with-ftp-and-phpmyadmin/
+- MySQL Workbench Download page (to interact with the applications database other than the command line interface): https://dev.mysql.com/downloads/workbench/
+
+
 
 ## Feedback
 Feedback on the application is very welcome! Just reach out to your teacher and/or the maintainer of this repository!

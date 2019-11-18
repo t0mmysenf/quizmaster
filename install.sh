@@ -36,8 +36,8 @@ composer install
 npm install
 
 # Setup the database
-mysql -user=root -password=${dbRootPassword} < /var/www/html/m150/initDb.sql
-mysql -user=quizmaster -password=${dbPassword} quiz < /var/www/html/m150/seedDb.sql
+mysql --user=root --password=${dbRootPassword} < /var/www/html/m150/initDb.sql
+mysql --user=quizmaster --password=${dbPassword} quiz < /var/www/html/m150/seedDb.sql
 
 # Prepare the laravel framework
 cp .env.example .env
@@ -53,12 +53,11 @@ done
 php artisan key:generate
 php artisan passport:keys
 
-# Fix file permissions
-# Assign 'apache' as user and user group recursively to the web root directory
-#chown -R apache:apache /var/www/html
-# Adjust permissions for some directories (recursively)
-#chmod -R 0775 /var/www/html/m150/quiz/storage/ /var/www/html/m150/quiz/bootstrap/cache/
-
 # Restart apache webserver
 systemctl restart httpd
 
+# Save current ip address (for public access) in variable
+pubIp=$(ip addr show | grep -m1 "inet.*global" | cut -d " " -f6 | cut -d "/" -f1)
+echo
+echo Access the application in your browser: ${pubIp}
+echo

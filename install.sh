@@ -2,11 +2,6 @@
 
 # This script is intended for automatic installation in the provided virtual machine.
 
-# Read git repository url
-echo "Please provide the (https) url for cloning your git repository..."
-read -p "Git Repository: " gitrepository
-echo
-
 # Read database configuration parameters
 echo "Please provide the database configuration parameters..."
 read -p "DB host [localhost]: " dbHost
@@ -30,10 +25,6 @@ dbConfiguration=(
     [{{DB_USERNAME}}]=${dbUsername}
     [{{DB_PASSWORD}}]=${dbPassword}
 )
-
-# Clone repository
-cd /var/www/html/m150
-sudo git clone $gitrepository .
 
 # Change to quiz directory
 cd /var/www/html/m150/quiz

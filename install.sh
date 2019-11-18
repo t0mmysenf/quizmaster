@@ -7,15 +7,15 @@ echo "Please provide the database configuration parameters..."
 read -p "DB host [localhost]: " dbHost
 dbHost=${dbHost:-localhost}
 read -p "DB port [3306]: " dbPort
-dbHost=${dbHost:-3306}
+dbPort=${dbHost:-3306}
 read -p "DB root password [Gibz1234]: " dbRootPassword
-dbHost=${dbHost:-Gibz1234}
+dbRootPassword=${dbHost:-Gibz1234}
 read -p "DB database name [quiz]: " dbDatabaseName
-dbHost=${dbHost:-quiz}
+dbDatabaseName=${dbHost:-quiz}
 read -p "DB username [quizmaster]: " dbUsername
-dbHost=${dbHost:-quizmaster}
+dbUsername=${dbHost:-quizmaster}
 read -p "DB password [qu!z_m150]: " dbPassword
-dbHost=${dbHost:-qu!z_m150}
+dbPassword=${dbHost:-qu!z_m150}
 
 declare -A dbConfiguration
 dbConfiguration=(
@@ -46,7 +46,7 @@ for i in "${!dbConfiguration[@]}"
 do
     search=${i}
     replace=${dbConfiguration[$i]}
-    sed -i "" "s/${search}/${replace}/g" .env
+    sed -i "s/${search}/${replace}/g" .env
 done
 
 # Generate application keys

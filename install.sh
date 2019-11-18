@@ -15,13 +15,13 @@ dbHost=${dbHost:-quizmaster}
 read -p "DB password [qu!z_m150]: " dbPassword
 dbHost=${dbHost:-qu!z_m150}
 
-declare -a dbConfiguration
+declare -A dbConfiguration
 dbConfiguration=(
-    [{{DB_HOST}}]=${dbHost}
-    [{{DB_PORT}}]=${dbPort}
-    [{{DB_DATABASE_NAME}}]=${dbDatabaseName}
-    [{{DB_USERNAME}}]=${dbUsername}
-    [{{DB_PASSWORD}}]=${dbPassword}
+    ['%%DB_HOST%%']=${dbHost}
+    ['%%DB_PORT%%']=${dbPort}
+    ['%%DB_DATABASE_NAME%%']=${dbDatabaseName}
+    ['%%DB_USERNAME%%']=${dbUsername}
+    ['%%DB_PASSWORD%%']=${dbPassword}
 )
 
 # Change to quiz directory

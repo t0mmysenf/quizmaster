@@ -15,9 +15,7 @@ dbHost=${dbHost:-quizmaster}
 read -p "DB password [qu!z_m150]: " dbPassword
 dbHost=${dbHost:-qu!z_m150}
 
-echo Your db-conf: $dbHost $dbPort $dbDatabaseName $dbUsername $dbPassword
-
-decalre -A dbConfiguration
+declare -a dbConfiguration
 dbConfiguration=(
     [{{DB_HOST}}]=${dbHost}
     [{{DB_PORT}}]=${dbPort}

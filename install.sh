@@ -7,15 +7,15 @@ echo "Please provide the database configuration parameters..."
 read -p "DB host [localhost]: " dbHost
 dbHost=${dbHost:-localhost}
 read -p "DB port [3306]: " dbPort
-dbPort=${dbHost:-3306}
+dbPort=${dbPort:-3306}
 read -p "DB root password [Gibz1234]: " dbRootPassword
-dbRootPassword=${dbHost:-Gibz1234}
+dbRootPassword=${dbRootPassword:-Gibz1234}
 read -p "DB database name [quiz]: " dbDatabaseName
-dbDatabaseName=${dbHost:-quiz}
+dbDatabaseName=${dbDatabaseName:-quiz}
 read -p "DB username [quizmaster]: " dbUsername
-dbUsername=${dbHost:-quizmaster}
+dbUsername=${dbUsername:-quizmaster}
 read -p "DB password [qu!z_m150]: " dbPassword
-dbPassword=${dbHost:-qu!z_m150}
+dbPassword=${dbPassword:-qu!z_m150}
 
 declare -A dbConfiguration
 dbConfiguration=(
@@ -55,9 +55,9 @@ sudo php artisan passport:keys
 
 # Fix file permissions
 # Assign 'apache' as user and user group recursively to the web root directory
-sudo chown -R apache:apache /var/www/html
+#sudo chown -R apache:apache /var/www/html
 # Adjust permissions for some directories (recursively)
-sudo chmod -R 0775 /var/www/html/m150/quiz/storage/ /var/www/html/m150/quiz/bootstrap/cache/
+#sudo chmod -R 0775 /var/www/html/m150/quiz/storage/ /var/www/html/m150/quiz/bootstrap/cache/
 
 # Restart apache webserver
 sudo systemctl restart httpd

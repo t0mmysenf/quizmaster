@@ -73,7 +73,7 @@ Change to the web root directory:
 
 ```shell
 # Change to document root directory
-cd /var/www/html/
+cd /var/www/html/m150/
 ```
 
 Inside the `/var/www/html/` directory, clone your git repository. For cloning, you might use the HTTPS url of your repository.
@@ -81,7 +81,7 @@ Please note: The dot at the end of the following command is essential!
 
 ```shell
 # Clone your git repository (replace [...] with your actual repository url)
-git clone [your-repository-url] .
+sudo git clone [your-repository-url] .
 ```
  
 #### Run the Installer Script

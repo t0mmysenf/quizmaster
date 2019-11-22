@@ -39,6 +39,64 @@ Consider this virtual machine as your local development environment. Later, you 
 ## Installation
 This installation guide assumes a fully working LAMP stack (Linux, Apache, MySQL, PHP) which meets the above mentioned requirements. You might want to use the given virtual machine or ask the system technician you trust.
 
+For the installation, you may choose between a _automatic_ (recommended) and _manual_ installation process. Please note: Only follow _one_ of the the installation guides below - it is useless to do the automatic _and_ manual installation!
+
+### Automatic installation (script based)
+In this repository, the file `install.sh` handles the complete installation. Please be aware, that this script based installation is optimized for the provided virtual machine. It is therefore _not_ tested on other systems.
+
+#### Setup the Virtual Machine
+Get the virtual machine from your teacher an import it on your local host machine. Before starting, you must create a **shared folder which must be named `m150`** (please be aware that CentOS as any other Linux system is case-sensitive).
+
+Steps to create this shared folder in _VMWare Workstation Pro_:
+0. Right click on your imported virtual machine
+0. Click _Settings..._
+0. Choose tab _Options_
+0. Choose list entry _Shared Folders_
+0. Click on button _Add..._
+0. In the assistant window, click _Next >_
+0. Choose any host path you like (this is where your project files will be available on your host system)
+0. For the _Name_ of the shared folder you _must_ type `m150`
+0. Click _Next >_
+0. Select only option _Enable this share_ (do _not_ check the _Read-only_ option)
+0. Click button _Finish_
+
+After you created the shared folder, startup the virtual machine an log in:
+- Username: `webadmin`
+- Password: `Gibz1234`
+
+#### Clone your forked Git Repository
+In this step, you'll clone your teams forked git repository. So please make sure you have forked this project for further collaboration with your fellow developers.
+
+To make the source code of the application available on your host system, it is important to clone the repository at the foreseen location - which correlates with the shared folder.
+
+Change to the web root directory:
+
+```shell
+# Change to document root directory
+cd /var/www/html/
+```
+
+Inside the `/var/www/html/` directory, clone your git repository. For cloning, you might use the HTTPS url of your repository.
+Please note: The dot at the end of the following command is essential! 
+
+```shell
+# Clone your git repository (replace [...] with your actual repository url)
+git clone [your-repository-url] .
+```
+ 
+#### Run the Installer Script
+You're almost done. Next up, run the provided installer script. It is import to run this script with root privileges. Therefore, make sure to type `sudo` in front of the script execution command. Again, the password to type for root privileges is `Gibz1234`.
+
+```shell
+# Run the installer script (with root privileges)
+sudo ./install.sh
+```
+
+#### Checkout the QU!Z Application
+At the end of the installation process, you'll be given the local ip address of your virtual machine. You can use this ip address to access the application from any browser on your host system.
+
+### Manual installation
+
 ### Clone Git Repository
 You'll be given the source code of the QU!Z application as git repository. You should _fork_ this repository. Now clone your own repository on the CentOS server. Do this at the document root of the Apache HTTP server. Usually, the document root is located at `/var/www/html/` of your server.
 ```shell

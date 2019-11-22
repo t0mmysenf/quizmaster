@@ -92,10 +92,17 @@ You're almost done. Next up, run the provided installer script. It is import to 
 sudo ./install.sh
 ```
 
+At the beginning of the script execution, you'll be prompted to enter several values related to the database connection (hostname, port, database name, username, password). The suggested values (in brackets) may be accepted by simply pressing enter. Your are _not_ advised to change the default values unless you really know what you're about to do!
+
+Its absolutely ok for the whole installation process to take several minutes. At the end you might see some information about failed package installation through _npm_ - don't worry about that!
+
 #### Checkout the QU!Z Application
 At the end of the installation process, you'll be given the local ip address of your virtual machine. You can use this ip address to access the application from any browser on your host system.
 
+The same ip address might be used (in combination with the above stated database port, which by default is `3306`) to establish a database connection. You might use MySQL Workbench or any other MySQL database tool to accomplish that.
+
 ### Manual installation
+The manual installation is _not_ required if you already completed the script based installation above!
 
 ### Clone Git Repository
 You'll be given the source code of the QU!Z application as git repository. You should _fork_ this repository. Now clone your own repository on the CentOS server. Do this at the document root of the Apache HTTP server. Usually, the document root is located at `/var/www/html/` of your server.

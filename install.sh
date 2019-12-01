@@ -4,6 +4,8 @@
 
 # Read database configuration parameters
 echo "Please provide the database configuration parameters..."
+echo "You may press 'enter' to accept de default values\n"
+
 read -p "DB host [localhost]: " dbHost
 dbHost=${dbHost:-localhost}
 read -p "DB port [3306]: " dbPort
@@ -33,9 +35,16 @@ cd /var/www/html/m150/quiz
 composer install
 
 # Build frontend using npm
+mkdir /home/webadmin/m150
+mkdir /home/webadmin/m150/node_modules
+ln -s /home/webadmin/m150/node_modules /var/www/html/m150/quiz/node_modules
 npm install
 
 # Setup the database
+sed -i "s/__DB_DATABASE_NAME__/${dbConfiguration['__DB_DATABASE_NAME__']}/g" /var/www/html/m150/initDb.sql
+sed -i "s/__DB_USERNAME__/${dbConfiguration['__DB_USERNAME__']}/g" /var/www/html/m150/initDb.sql
+sed -i "s/__DB_PASSWORD__/${dbConfiguration['__DB_PASSWORD__']}/g" /var/www/html/m150/initDb.sql
+
 mysql --user=root --password=${dbRootPassword} < /var/www/html/m150/initDb.sql
 mysql --user=quizmaster --password=${dbPassword} quiz < /var/www/html/m150/seedDb.sql
 

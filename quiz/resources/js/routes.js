@@ -3,6 +3,7 @@ import NewQuiz from "./components/quiz/NewQuiz";
 import QuizList from "./components/quiz/QuizList";
 import QuizView from "./components/quiz/QuizView";
 import NewQuestion from "./components/question/NewQuestion";
+import YNNewQuestion from "./components/question/NewQuestionYesNo";
 import SignUp from "./components/Auth/SignUp";
 import QuizPlay from "./components/quiz/QuizPlay";
 import Logout from "./components/Auth/Logout";
@@ -48,6 +49,16 @@ const routes = [
         path: '/quizzes/:quizId/new-question',
         name: 'add question to quiz',
         component: NewQuestion,
+        props: (route) => {
+            const props = {...route.params};
+            props.quizId = +props.quizId;
+            return props;
+        }
+    },
+    {
+        path: '/quizzes/:quizId/new-ynquestion',
+        name: 'add Yes No question to quiz',
+        component: YNNewQuestion,
         props: (route) => {
             const props = {...route.params};
             props.quizId = +props.quizId;

@@ -52,6 +52,7 @@ class QuestionController extends Controller
             'quiz_id' => $request->get('quiz_id'),
             'title' => $request->get('title'),
             'questionText' => $request->get('questionText'),
+            'isYesNo' => $request->get('isYesNo'),
         ]);
 
         $question->save();

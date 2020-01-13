@@ -52,7 +52,7 @@
                 QuizRepository.createQuiz(this.formData)
                     .then(response => {
                         if (response.status === 201) {
-                            this.$router.push(`/quizzes/${response.data.id}/new-question`);
+                            this.$router.push(`/quizzes/${response.data.id}/`);
                         }
                     })
                     .catch(() => {

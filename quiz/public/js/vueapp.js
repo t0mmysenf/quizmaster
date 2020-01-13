@@ -3056,7 +3056,7 @@ var QuizRepository = _repositories_RepositoryFactory__WEBPACK_IMPORTED_MODULE_3_
                 this.requestPending = true;
                 QuizRepository.createQuiz(this.formData).then(function (response) {
                   if (response.status === 201) {
-                    _this.$router.push("/quizzes/".concat(response.data.id, "/new-question"));
+                    _this.$router.push("/quizzes/".concat(response.data.id, "/"));
                   }
                 })["catch"](function () {
                   _this.showSnackbar("Could not persist quiz!");

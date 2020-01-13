@@ -33,6 +33,13 @@
                     Add question
                 </v-btn>
             </v-col>
+            <v-col v-if="quiz.user_id === $root.$data.user.id">
+                <v-btn :to="`/quizzes/${quiz.id}/new-ynquestion`"
+                       block>
+                    <v-icon left color="green">add</v-icon>
+                    Add Yes/No question
+                </v-btn>
+            </v-col>
             <v-col>
                 <v-btn :to="`/quizzes/${quiz.id}/play`"
                        block>

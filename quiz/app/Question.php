@@ -12,6 +12,7 @@ class Question extends Model
         'quiz_id',
         'title',
         'questionText',
+        'isYesNo',
     ];
 
     public function scopeOfQuiz(Builder $query, Quiz $quiz)

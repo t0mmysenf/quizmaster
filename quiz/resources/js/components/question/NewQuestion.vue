@@ -1,4 +1,4 @@
-<template>
+d<template>
     <v-container>
         <v-row>
             <v-col>
@@ -90,7 +90,8 @@
 
             async saveQuestion() {
                 this.requestPending = true;
-                this.formData.quiz_id = this.quizId;    // Add quiz id to question!
+                this.formData.quiz_id = this.quizId;  // Add quiz id to question!
+                this.formData.isYesNo = false;
                 QuestionRepository.createQuestion(this.formData)
                     .then(response => {
                         if (response.status === 200) {

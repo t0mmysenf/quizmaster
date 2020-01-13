@@ -5,11 +5,12 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
 
-class Quiz extends Model
+
+class QuizCompletion extends Model
 {
     protected $fillable = [
-        'title',
-        'description'
+        'points',
+        'userId'
     ];
 
     public static function boot()
@@ -21,18 +22,13 @@ class Quiz extends Model
         });
     }
 
-    public function owner()
+    public function user()
     {
         return $this->belongsTo(User::class);
     }
 
-    public function questions()
+    public function quiz()
     {
-        return $this->hasMany(Question::class);
-    }
-
-    public function quizCompletions()
-    {
-        return $this->hasMany(QuizCompletions::class);
+        return $this->belongsTo(Question::class);
     }
 }

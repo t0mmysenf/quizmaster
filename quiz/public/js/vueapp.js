@@ -6084,7 +6084,7 @@ var render = function() {
               _c("br"),
               _c("a", { attrs: { href: "/signUp" } }, [_vm._v("Sign up")]),
               _vm._v(
-                " to create your own QU!ZES and earn\n                points by answering all the other questions!\n            "
+                " to create your own QU!ZES and earn\n                salo salmaskpngoansgjbpg nasdgous\n            "
               )
             ])
           ])
@@ -60676,8 +60676,8 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/petergisler/Development/GIBZ/M150/quiz/resources/js/vueapp.js */"./resources/js/vueapp.js");
-module.exports = __webpack_require__(/*! /Users/petergisler/Development/GIBZ/M150/quiz/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\Elias\Documents\m15000\quiz\resources\js\vueapp.js */"./resources/js/vueapp.js");
+module.exports = __webpack_require__(/*! C:\Users\Elias\Documents\m15000\quiz\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

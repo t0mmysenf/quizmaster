@@ -42,4 +42,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(Quiz::class);
     }
+
+    public function quizCompletions()
+    {
+        return $this->hasMany(QuizCompletions::class);
+    }
 }

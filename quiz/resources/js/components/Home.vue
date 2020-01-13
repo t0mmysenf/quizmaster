@@ -11,7 +11,7 @@
         <v-row>
             <v-col class="text-center">
                 <p>Let's get started right now:<br/><a href="/signUp">Sign up</a> to create your own QU!ZES and earn
-                    points by answering all the other questions!
+                    salo salmaskpngoansgjbpg nasdgous
                 </p>
             </v-col>
         </v-row>

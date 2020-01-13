@@ -29,7 +29,9 @@ Route::apiResources([
     'quizzes' => 'QuizController',
     'questions' => 'QuestionController',
     'answers' => 'AnswerController',
+    'users' => 'UserController',
 ]);
 
 Route::get('/quizzes/{quiz}/questions', 'QuestionController@indexForQuiz');
 Route::get('/questions/{question}/answers', 'AnswerController@indexForQuestion');
+Route::get('/users', 'UserController@index');

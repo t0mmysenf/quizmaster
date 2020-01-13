@@ -38,7 +38,7 @@
     const UserRepository = RepositoryFactory.get('users');
 
     export default {
-        name: "UserList",
+        name: "Rangliste",
         data: () => ({
             users: [],
             snackbarText: '',

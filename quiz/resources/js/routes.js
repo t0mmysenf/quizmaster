@@ -1,60 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import Login from "./components/Auth/Login";
 import NewQuiz from "./components/quiz/NewQuiz";
 import QuizList from "./components/quiz/QuizList";
@@ -65,6 +8,7 @@ import SignUp from "./components/Auth/SignUp";
 import QuizPlay from "./components/quiz/QuizPlay";
 import Logout from "./components/Auth/Logout";
 import Home from "./components/Home";
+import Rangliste from "./components/rangliste/Rangliste";
 
 const routes = [
     {
@@ -131,6 +75,11 @@ const routes = [
             props.quizId = +props.quizId;
             return props;
         }
+    },
+    {
+        path: '/rangliste',
+        name: 'rangliste',
+        component: Rangliste
     }
 ];
 

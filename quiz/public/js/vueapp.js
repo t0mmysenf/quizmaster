@@ -61290,13 +61290,8 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
 __webpack_require__(/*! C:\Users\Elias\Documents\m15000\quiz\resources\js\vueapp.js */"./resources/js/vueapp.js");
 module.exports = __webpack_require__(/*! C:\Users\Elias\Documents\m15000\quiz\resources\sass\app.scss */"./resources/sass/app.scss");
-=======
-__webpack_require__(/*! D:\School\quizmaster\quiz\resources\js\vueapp.js */"./resources/js/vueapp.js");
-module.exports = __webpack_require__(/*! D:\School\quizmaster\quiz\resources\sass\app.scss */"./resources/sass/app.scss");
->>>>>>> 508839c0c2e29c0588ee72387d63d9181b8189cc
 
 
 /***/ })

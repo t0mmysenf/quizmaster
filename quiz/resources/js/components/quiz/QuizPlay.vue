@@ -236,6 +236,8 @@
                 });
             },
 
+            
+
             returnToList() {
                 this.$router.push('/quizzes');
             },
